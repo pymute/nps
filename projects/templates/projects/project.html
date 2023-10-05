@@ -1,0 +1,9 @@
+{% extends 'main.html' %}
+{%load static%}
+{% block content %}
+<h1>This is Project Template</h1>
+<img style="max-width: 200px;" src="{{project.project_image.url}}">
+<h2>{{project.title}}</h2>
+<h4>{{project.description}}</h4>
+<h5>{{project.tag}}</h5>
+{% endblock content %}
